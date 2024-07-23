@@ -1,0 +1,14 @@
+public class Main {
+    public static void main(String[] args) {
+        String str1 = "Hello, World!";
+        String str2 = "Hello";
+
+        boolean startsWith = str1.startsWith(str2);
+
+        if (startsWith) {
+            System.out.println("The string starts with the specified prefix.");
+        } else {
+            System.out.println("The string does not start with the specified prefix.");
+        }
+    }
+}
