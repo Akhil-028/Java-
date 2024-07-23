@@ -1,0 +1,27 @@
+import java.util.HashSet;
+import java.util.Set;
+
+public class RemoveDuplicates {
+    public static String removeDuplicates(String str1, String str2) {
+        Set<Character> set = new HashSet<>();
+        for (char c : str2.toCharArray()) {
+            set.add(c);
+        }
+        
+        StringBuilder result = new StringBuilder();
+        for (char c : str1.toCharArray()) {
+            if (!set.contains(c)) {
+                result.append(c);
+            }
+        }
+        
+        return result.toString();
+    }
+
+    public static void main(String[] args) {
+        String str1 = "hello";
+        String str2 = "world";
+        String result = removeDuplicates(str1, str2);
+        System.out.println("Result: " + result);
+    }
+}
