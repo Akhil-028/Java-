@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+        String word = "example";
+        String[] items = {"lamp", "axe", "maple", "mexico", "example", "pale"};
+
+        List<String> resultList = new ArrayList<>();
+
+        for (String item : items) {
+            if (containsAllCharacters(item, word)) {
+                resultList.add(item);
+            }
+        }
+
+        System.out.println("Items containing all characters of the word '" + word + "':");
+        for (String result : resultList) {
+            System.out.println(result);
+        }
+    }
+
+    public static boolean containsAllCharacters(String item, String word) {
+        for (char c : word.toCharArray()) {
+            if (item.indexOf(c) == -1) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
