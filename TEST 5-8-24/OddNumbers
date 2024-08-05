@@ -1,0 +1,14 @@
+public class OddNumbers {
+    public static void main(String[] args) {
+        int n = 5; 
+        int count = 0;
+        int num = 1;
+        
+        while (count < n) {
+            num += 2;
+            count++;
+        }
+        
+        System.out.println("The " + n + "th odd number after " + n + " odd numbers is: " + num);
+    }
+}
