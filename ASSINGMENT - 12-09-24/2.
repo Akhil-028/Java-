@@ -1,0 +1,24 @@
+2. public class Main {
+    public static void main(String[] args) {
+        
+        int num = 123;
+        String numStr = String.valueOf(num);
+
+        
+        String longStr = "123456789";
+        long numLong = Long.parseLong(longStr);
+
+       
+        String floatStr = "123.45";
+        float numFloat = Float.parseFloat(floatStr);
+
+       
+        String doubleStr = "123.456";
+        double numDouble = Double.parseDouble(doubleStr);
+
+        System.out.println("Integer to String: " + numStr);
+        System.out.println("String to Long: " + numLong);
+        System.out.println("String to Float: " + numFloat);
+        System.out.println("String to Double: " + numDouble);
+    }
+}
